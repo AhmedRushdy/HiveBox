@@ -53,3 +53,26 @@ Here is a pre-start checklist:
 ## Implementation
 
 ** ADD YOUR IMPLEMENTATION DOCUMENTATION HERE **
+
+## Testing
+
+### Prerequisites
+- Python 3.x installed
+- Docker (if running tests in container)
+
+### Running Tests in Docker
+1. Build the test container:
+   ```bash
+   docker build -t hivebox-tests -f Dockerfile .
+   ```
+
+2. Run the tests in the container:
+   ```bash
+   docker run hivebox-tests python -m pytest tests/
+   ```
+
+### Test Environment Variables
+Make sure to set the following environment variables before running tests:
+- `APP_VERSION`: Application version (e.g., "v.1.0.0")
+
+---
