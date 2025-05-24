@@ -66,10 +66,7 @@ Here is a pre-start checklist:
    docker build -t hivebox-tests -f Dockerfile .
    ```
 
-2. Run the tests in the container:
-   ```bash
-   docker run hivebox-tests python -m pytest tests/
-   ```
+
 
 ### Test Environment Variables
 Make sure to set the following environment variables before running tests:
